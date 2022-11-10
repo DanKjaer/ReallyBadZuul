@@ -1,6 +1,12 @@
+package ui;
+
+import logic.Parser;
+import logic.Command;
+import logic.Room;
+
 /**
- *  This class is the main class of the "World of Zuul" application. 
- *  "World of Zuul" is a very simple, text based adventure game.  Users 
+ *  This class is the main class of the "World of ui.Zuul" application.
+ *  "World of ui.Zuul" is a very simple, text based adventure game.  Users
  *  can walk around some scenery. That's all. It should really be extended 
  *  to make it more interesting!
  * 
@@ -81,8 +87,8 @@ public class Game
     private void printWelcome()
     {
         System.out.println();
-        System.out.println("Welcome to the World of Zuul!");
-        System.out.println("World of Zuul is a new, incredibly boring adventure game.");
+        System.out.println("Welcome to the World of ui.Zuul!");
+        System.out.println("World of ui.Zuul is a new, incredibly boring adventure game.");
         System.out.println("Type 'help' if you need help.");
         System.out.println();
         printLocationInfo();
@@ -190,6 +196,6 @@ public class Game
     }
 
     private void eat(){
-        System.out.println(currentRoom.getLongDescription());
+        System.out.println("You have eaten now and you are not hungry any more.");
     }
 }

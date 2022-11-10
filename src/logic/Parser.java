@@ -1,13 +1,17 @@
+package logic;
+
+import data.CommandWords;
+
 import java.util.Scanner;
 
 /**
- * This class is part of the "World of Zuul" application. 
- * "World of Zuul" is a very simple, text based adventure game.  
+ * This class is part of the "World of ui.Zuul" application.
+ * "World of ui.Zuul" is a very simple, text based adventure game.
  * 
  * This parser reads user input and tries to interpret it as an "Adventure"
  * command. Every time it is called it reads a line from the terminal and
  * tries to interpret the line as a two word command. It returns the command
- * as an object of class Command.
+ * as an object of class logic.Command.
  *
  * The parser has a set of known command words. It checks user input against
  * the known commands, and if the input is not one of the known commands, it
@@ -59,7 +63,7 @@ public class Parser
             return new Command(word1, word2);
         }
         else {
-            return new Command(null, word2); 
+            return new Command(null, word2);
         }
     }
     /**
